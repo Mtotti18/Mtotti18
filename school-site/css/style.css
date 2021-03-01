@@ -1,4 +1,4 @@
- /* General setup */
+/* General setup */
 
 * {
     box-sizing: border-box;
@@ -68,7 +68,6 @@ header, footer {
   border-bottom: .125rem solid #33658A;
 }
 
-/* Imported Typfaces */
 
 @font-face {
     font-family: "josefinslab";
@@ -162,7 +161,6 @@ ol {
 }
 
 
-/* Navigation Menu */
 
 nav {
          padding-left: 0;
