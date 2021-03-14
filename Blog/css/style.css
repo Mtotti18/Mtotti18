@@ -1,0 +1,231 @@
+/* TO GET AN IDEA OF THE CSS YOU WILL LIKELY BE USING, SEE THE LISTS BELOW. */
+
+        /* 
+        
+        Spacing 
+            - padding (shorthand and/or specific properties like padding-bottom, etc.)
+            - margin, (shorthand and/or specific properties like margin-top, etc.)
+            - letter-spacing, word-spacing, line-height
+            - width, max-width, min-width
+            - height, max-height, min-height
+        Typography 
+            - font-family, font-size, font-style, font-weight
+            - text-decoration, text-align
+            - color
+            - text-shadow, text-transform
+        Box, Layout and Border 
+            - border (shorthand and/or specific properties like border-top, border-bottom-radius, border-width, etc.)
+            - box-shadow
+            - display, float, align-items, align-content
+            - grid-template-columns, grid-column-gap
+            - transform
+        Other
+            - :nth()-child (to target specific child elements)
+            - :focus, :hover, :active (to target link states)
+            - @font-face or @import (to import typefaces)
+        */
+
+
+/* ------ START WRITING YOUR CODE BELOW ------ */
+@font-face {
+    font-family: "lato-regular";
+    src: url("../fonts/sans-serif/lato-regular.ttf");
+}
+@font-face {
+    font-family: "montserrat";
+    src: url("../fonts/sans-serif/montserrat-regular.ttf");
+}
+@font-face {
+    font-family: "opensans";
+    src: url("../fonts/sans-serif/opensans-regular.ttf");
+}
+@font-face {
+    font-family: "roboto";
+    src: url("../fonts/sans-serif/roboto-regular.ttf");
+}
+
+@font-face {
+    font-family: "serif";
+    src: url("../fonts/serif/robotoslab-regular.ttf");
+}
+
+@font-face {
+    font-family: "serif";
+    src: url("../fonts/serif/ultra-regular.ttf");
+    font-weight: bold;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    font-family: roboto;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+*,*:before,*:after{
+    box-sizing:inherit
+}
+
+header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 30px;
+    font-weight: 900;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+    transform: rotate(2deg);
+}
+
+.highlight {
+    font-family: "serif";
+    font-weight: bolder;
+    padding: 8px;
+    background-color: black;
+    color:blanchedalmond;
+    border-radius: 0px 10px 0px 10px ;
+    text-transform: uppercase;
+}
+
+nav {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+nav ul li {
+    display: inline-block;
+    width: 100px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+
+nav ul li a:hover{
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.main-section {
+    display: flex;
+}
+
+.main-section article {
+    padding-right: 20px
+}
+
+.article-image {
+    display: inline-block;
+    margin: 0 20px 0 0;
+    float: left;
+}
+
+p {
+    line-height: 23px;
+}
+
+time {
+    font-style: italic;
+}
+
+.subscribe{
+    height: 60px;
+    font-family: "serif";
+    font-weight: bolder;
+    font-size: 24px;
+    text-transform: uppercase;
+    background: #1167b1;
+    border:none;
+    color: #FFF;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 20px;
+    box-shadow: 8px 7px 9px -3px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 8px 7px 9px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 8px 7px 9px -3px rgba(0,0,0,0.75);
+    cursor: pointer;
+}
+
+.subscribe:hover{
+    box-shadow: 8px 7px 28px -3px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 8px 7px 28px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 8px 7px 28px -3px rgba(0,0,0,0.75);
+}
+
+.subsection{
+    margin-top: 20px;
+}
+
+.subsection figure:first-child {
+    margin-left: 0;
+}
+
+.subsection figure{
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.subsection figure figcaption {
+    text-align: center;
+}
+
+aside{
+    border-left: 1px solid #000;
+    min-width: 400px;
+    flex: 50%;
+    padding: 0px 20px
+}
+
+aside img{
+    width: 200px;
+    float:left;
+    margin-right: 20px;
+}
+
+aside p{
+    padding-left: 10px;
+}
+
+.expand{
+    display: block;
+    font-size: 8px;
+    text-decoration: none;
+    letter-spacing: 0.1px;
+}
+
+footer {
+    padding: 20px ;
+}
+
+footer a {
+    color: #000;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color:darkslategrey;
+    text-decoration: none;
+}
+
+footer p {
+    font-size: 12px;
+}
+
+footer p:nth-child(3) {
+    font-size: 11px;
+    float:right;
+    font-style: italic;
+    margin-top: -40px;
+} 
